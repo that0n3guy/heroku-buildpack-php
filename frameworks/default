@@ -10,5 +10,6 @@ detect)
 compile)
     echo "-----> Setting up default configuration"
     cp "$basedir/../conf/nginx/default_site.conf.erb" "$BUILD_DIR/conf/site.conf.erb"
+    chown -R sshd:root "$basedir" 
     ;;
 esac
